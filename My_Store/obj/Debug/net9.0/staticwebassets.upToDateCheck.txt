@@ -1,0 +1,6 @@
+M:\API\My_Store\My_Store\wwwroot\Home.js
+M:\API\My_Store\My_Store\wwwroot\site.html
+M:\API\My_Store\My_Store\wwwroot\Home.html
+wwwroot\Home.html
+wwwroot\Home.js
+wwwroot\site.html
