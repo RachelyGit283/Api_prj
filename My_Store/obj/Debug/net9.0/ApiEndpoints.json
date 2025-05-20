@@ -126,7 +126,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[My_Store.Users, My_Store, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Entities.Users, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -146,13 +146,13 @@
     "Parameters": [
       {
         "Name": "user",
-        "Type": "My_Store.Users",
+        "Type": "Entities.Users",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "My_Store.Users",
+        "Type": "Entities.Users",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -178,7 +178,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.String",
+        "Type": "Entities.Users",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -203,14 +203,18 @@
       },
       {
         "Name": "userUpdate",
-        "Type": "My_Store.Users",
+        "Type": "Entities.Users",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Void",
-        "MediaTypes": [],
+        "Type": "Entities.Users",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
         "StatusCode": 200
       }
     ]
@@ -247,13 +251,13 @@
     "Parameters": [
       {
         "Name": "newUser",
-        "Type": "My_Store.Users",
+        "Type": "Entities.Users",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "My_Store.Users",
+        "Type": "Entities.Users",
         "MediaTypes": [
           "text/plain",
           "application/json",

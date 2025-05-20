@@ -3,20 +3,48 @@
   "WorkspaceRootPath": "M:\\API\\My_Store\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{14C290F7-5DFD-4A09-A4E9-E8D0BFDA1929}|My_Store\\My_Store.csproj|m:\\api\\my_store\\my_store\\my_store.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{14C290F7-5DFD-4A09-A4E9-E8D0BFDA1929}|My_Store\\My_Store.csproj|solutionrelative:my_store\\my_store.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{88DA1248-68F2-4A6B-9C95-4DD15664732E}|Repositories\\Repositories.csproj|m:\\api\\my_store\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88DA1248-68F2-4A6B-9C95-4DD15664732E}|Repositories\\Repositories.csproj|solutionrelative:repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14C290F7-5DFD-4A09-A4E9-E8D0BFDA1929}|My_Store\\My_Store.csproj|m:\\api\\my_store\\my_store\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14C290F7-5DFD-4A09-A4E9-E8D0BFDA1929}|My_Store\\My_Store.csproj|solutionrelative:my_store\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{14C290F7-5DFD-4A09-A4E9-E8D0BFDA1929}|My_Store\\My_Store.csproj|m:\\api\\my_store\\my_store\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{14C290F7-5DFD-4A09-A4E9-E8D0BFDA1929}|My_Store\\My_Store.csproj|solutionrelative:my_store\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14C290F7-5DFD-4A09-A4E9-E8D0BFDA1929}|My_Store\\My_Store.csproj|m:\\api\\my_store\\my_store\\my_store.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{14C290F7-5DFD-4A09-A4E9-E8D0BFDA1929}|My_Store\\My_Store.csproj|solutionrelative:my_store\\my_store.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{14C290F7-5DFD-4A09-A4E9-E8D0BFDA1929}|My_Store\\My_Store.csproj|m:\\api\\my_store\\my_store\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14C290F7-5DFD-4A09-A4E9-E8D0BFDA1929}|My_Store\\My_Store.csproj|solutionrelative:my_store\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9427D53C-6B0D-46EE-9114-0D8C40ECCB08}|Services\\Services.csproj|m:\\api\\my_store\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9427D53C-6B0D-46EE-9114-0D8C40ECCB08}|Services\\Services.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FAF309A-2A57-445B-A406-7C82A75F14CB}|Entities\\Entities.csproj|m:\\api\\my_store\\entities\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FAF309A-2A57-445B-A406-7C82A75F14CB}|Entities\\Entities.csproj|solutionrelative:entities\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14C290F7-5DFD-4A09-A4E9-E8D0BFDA1929}|My_Store\\My_Store.csproj|m:\\api\\my_store\\my_store\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{14C290F7-5DFD-4A09-A4E9-E8D0BFDA1929}|My_Store\\My_Store.csproj|solutionrelative:my_store\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9427D53C-6B0D-46EE-9114-0D8C40ECCB08}|Services\\Services.csproj|m:\\api\\my_store\\services\\services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9427D53C-6B0D-46EE-9114-0D8C40ECCB08}|Services\\Services.csproj|solutionrelative:services\\services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88DA1248-68F2-4A6B-9C95-4DD15664732E}|Repositories\\Repositories.csproj|m:\\api\\my_store\\repositories\\repositories.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{88DA1248-68F2-4A6B-9C95-4DD15664732E}|Repositories\\Repositories.csproj|solutionrelative:repositories\\repositories.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FAF309A-2A57-445B-A406-7C82A75F14CB}|Entities\\Entities.csproj|m:\\api\\my_store\\entities\\entities.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9FAF309A-2A57-445B-A406-7C82A75F14CB}|Entities\\Entities.csproj|solutionrelative:entities\\entities.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{14C290F7-5DFD-4A09-A4E9-E8D0BFDA1929}|My_Store\\My_Store.csproj|m:\\api\\my_store\\my_store\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14C290F7-5DFD-4A09-A4E9-E8D0BFDA1929}|My_Store\\My_Store.csproj|solutionrelative:my_store\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14C290F7-5DFD-4A09-A4E9-E8D0BFDA1929}|My_Store\\My_Store.csproj|m:\\api\\my_store\\my_store\\my_store.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{14C290F7-5DFD-4A09-A4E9-E8D0BFDA1929}|My_Store\\My_Store.csproj|solutionrelative:my_store\\my_store.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{14C290F7-5DFD-4A09-A4E9-E8D0BFDA1929}|My_Store\\My_Store.csproj|m:\\api\\my_store\\my_store\\wwwroot\\home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -25,18 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{14C290F7-5DFD-4A09-A4E9-E8D0BFDA1929}|My_Store\\My_Store.csproj|m:\\api\\my_store\\my_store\\wwwroot\\site.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{14C290F7-5DFD-4A09-A4E9-E8D0BFDA1929}|My_Store\\My_Store.csproj|solutionrelative:my_store\\wwwroot\\site.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14C290F7-5DFD-4A09-A4E9-E8D0BFDA1929}|My_Store\\My_Store.csproj|m:\\api\\my_store\\my_store\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14C290F7-5DFD-4A09-A4E9-E8D0BFDA1929}|My_Store\\My_Store.csproj|solutionrelative:my_store\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14C290F7-5DFD-4A09-A4E9-E8D0BFDA1929}|My_Store\\My_Store.csproj|m:\\api\\my_store\\my_store\\wwwroot\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{14C290F7-5DFD-4A09-A4E9-E8D0BFDA1929}|My_Store\\My_Store.csproj|solutionrelative:my_store\\wwwroot\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14C290F7-5DFD-4A09-A4E9-E8D0BFDA1929}|My_Store\\My_Store.csproj|m:\\api\\my_store\\my_store\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14C290F7-5DFD-4A09-A4E9-E8D0BFDA1929}|My_Store\\My_Store.csproj|solutionrelative:my_store\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -45,83 +61,12 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "DockedWidth": 110,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Home.html",
-              "DocumentMoniker": "M:\\API\\My_Store\\My_Store\\wwwroot\\Home.html",
-              "RelativeDocumentMoniker": "My_Store\\wwwroot\\Home.html",
-              "ToolTip": "M:\\API\\My_Store\\My_Store\\wwwroot\\Home.html",
-              "RelativeToolTip": "My_Store\\wwwroot\\Home.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-03-10T10:45:11.053Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "M:\\API\\My_Store\\My_Store\\Program.cs",
-              "RelativeDocumentMoniker": "My_Store\\Program.cs",
-              "ToolTip": "M:\\API\\My_Store\\My_Store\\Program.cs",
-              "RelativeToolTip": "My_Store\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T11:00:55.871Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Home.js",
-              "DocumentMoniker": "M:\\API\\My_Store\\My_Store\\wwwroot\\Home.js",
-              "RelativeDocumentMoniker": "My_Store\\wwwroot\\Home.js",
-              "ToolTip": "M:\\API\\My_Store\\My_Store\\wwwroot\\Home.js",
-              "RelativeToolTip": "My_Store\\wwwroot\\Home.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-03-10T10:57:08.032Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "M:\\API\\My_Store\\My_Store\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "My_Store\\Controllers\\UsersController.cs",
-              "ToolTip": "M:\\API\\My_Store\\My_Store\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "My_Store\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAJoAAAAAAAAAAAAkwLEAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T11:08:40.776Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "site.html",
-              "DocumentMoniker": "M:\\API\\My_Store\\My_Store\\wwwroot\\site.html",
-              "RelativeDocumentMoniker": "My_Store\\wwwroot\\site.html",
-              "ToolTip": "M:\\API\\My_Store\\My_Store\\wwwroot\\site.html",
-              "RelativeToolTip": "My_Store\\wwwroot\\site.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-03-26T13:47:48.29Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "CarController.cs",
               "DocumentMoniker": "M:\\API\\My_Store\\My_Store\\Controllers\\CarController.cs",
               "RelativeDocumentMoniker": "My_Store\\Controllers\\CarController.cs",
@@ -134,40 +79,164 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "My_Store",
-              "DocumentMoniker": "M:\\API\\My_Store\\My_Store\\My_Store.csproj",
-              "RelativeDocumentMoniker": "My_Store\\My_Store.csproj",
-              "ToolTip": "M:\\API\\My_Store\\My_Store\\My_Store.csproj",
-              "RelativeToolTip": "My_Store\\My_Store.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-26T13:51:29.035Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Users.cs",
-              "DocumentMoniker": "M:\\API\\My_Store\\My_Store\\Users.cs",
-              "RelativeDocumentMoniker": "My_Store\\Users.cs",
-              "ToolTip": "M:\\API\\My_Store\\My_Store\\Users.cs",
-              "RelativeToolTip": "My_Store\\Users.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T13:36:43.665Z",
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "M:\\API\\My_Store\\My_Store\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "My_Store\\Properties\\launchSettings.json",
+              "ToolTip": "M:\\API\\My_Store\\My_Store\\Properties\\launchSettings.json",
+              "RelativeToolTip": "My_Store\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-19T05:48:33.031Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
+              "Title": "Entities.csproj",
+              "DocumentMoniker": "M:\\API\\My_Store\\Entities\\Entities.csproj",
+              "RelativeDocumentMoniker": "Entities\\Entities.csproj",
+              "ToolTip": "M:\\API\\My_Store\\Entities\\Entities.csproj",
+              "RelativeToolTip": "Entities\\Entities.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-26T17:49:29.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Repositories.csproj",
+              "DocumentMoniker": "M:\\API\\My_Store\\Repositories\\Repositories.csproj",
+              "RelativeDocumentMoniker": "Repositories\\Repositories.csproj",
+              "ToolTip": "M:\\API\\My_Store\\Repositories\\Repositories.csproj",
+              "RelativeToolTip": "Repositories\\Repositories.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-26T18:35:07.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Services.csproj",
+              "DocumentMoniker": "M:\\API\\My_Store\\Services\\Services.csproj",
+              "RelativeDocumentMoniker": "Services\\Services.csproj",
+              "ToolTip": "M:\\API\\My_Store\\Services\\Services.csproj",
+              "RelativeToolTip": "Services\\Services.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-26T18:12:56.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "M:\\API\\My_Store\\My_Store\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "My_Store\\Controllers\\UsersController.cs",
+              "ToolTip": "M:\\API\\My_Store\\My_Store\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "My_Store\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T11:08:40.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "M:\\API\\My_Store\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Services\\UserService.cs",
+              "ToolTip": "M:\\API\\My_Store\\Services\\UserService.cs",
+              "RelativeToolTip": "Services\\UserService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T16:06:01.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Users.cs",
+              "DocumentMoniker": "M:\\API\\My_Store\\Entities\\Users.cs",
+              "RelativeDocumentMoniker": "Entities\\Users.cs",
+              "ToolTip": "M:\\API\\My_Store\\Entities\\Users.cs",
+              "RelativeToolTip": "Entities\\Users.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T17:27:07.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "M:\\API\\My_Store\\My_Store\\appsettings.json",
+              "RelativeDocumentMoniker": "My_Store\\appsettings.json",
+              "ToolTip": "M:\\API\\My_Store\\My_Store\\appsettings.json",
+              "RelativeToolTip": "My_Store\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-19T10:59:53.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "My_Store.csproj",
               "DocumentMoniker": "M:\\API\\My_Store\\My_Store\\My_Store.csproj",
               "RelativeDocumentMoniker": "My_Store\\My_Store.csproj",
               "ToolTip": "M:\\API\\My_Store\\My_Store\\My_Store.csproj",
               "RelativeToolTip": "My_Store\\My_Store.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-10T10:42:24.697Z",
+              "WhenOpened": "2025-03-26T18:15:09.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Home.js",
+              "DocumentMoniker": "M:\\API\\My_Store\\My_Store\\wwwroot\\Home.js",
+              "RelativeDocumentMoniker": "My_Store\\wwwroot\\Home.js",
+              "ToolTip": "M:\\API\\My_Store\\My_Store\\wwwroot\\Home.js",
+              "RelativeToolTip": "My_Store\\wwwroot\\Home.js",
+              "ViewState": "AgIAAEAAAAAAAAAAAEBVwHcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-10T10:57:08.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "site.html",
+              "DocumentMoniker": "M:\\API\\My_Store\\My_Store\\wwwroot\\site.html",
+              "RelativeDocumentMoniker": "My_Store\\wwwroot\\site.html",
+              "ToolTip": "M:\\API\\My_Store\\My_Store\\wwwroot\\site.html",
+              "RelativeToolTip": "My_Store\\wwwroot\\site.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-26T13:47:48.29Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 290,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "M:\\API\\My_Store\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
+              "ToolTip": "M:\\API\\My_Store\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Repositories\\UserRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAIAwwCMAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T16:01:27.547Z",
               "EditorCaption": ""
             }
           ]
