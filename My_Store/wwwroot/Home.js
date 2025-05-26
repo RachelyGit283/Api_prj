@@ -1,174 +1,100 @@
-﻿
-
-    //login = async () => {
-    //    const username = document.querySelector("#name").value;
-    //    const password = document.querySelector("#password").value;
-    //    if (!username || !password) {
-    //        alert("username and password are required");
-    //    }
-    //    const loginrequest = {
-    //        username: username,
-    //        password: password
-    //    }
-    //    try {
-    //        const response = await fetch("api/users/login", {
-    //            method: "POST",
-    //            headers: {
-    //                "content-type": "application/json",
-    //                "body": JSON.stringify(loginrequest)
-    //            }
-    //        })
-    //        if (!response.ok)
-    //            throw new Error("Error recieving data to server")
-    //        alert("user add")
-    //    }
-    //    catch (error) {
-    //        alert(error)
-    //    }
-    //}
-    //addUserToServer = async () => {
-    //    const nameUser = document.querySelector("#nameUser").value
-    //    const password = document.querySelector("#password").value
-    //        const firstname = document.querySelector("#firstName").value;
-    //    const lastname = document.querySelector("#lastName").value;
-
-    //    const User = { nameUser, password, lastName, firstName }
-    //    try {
-    //        console.log(User)
-    //        const response = await fetch("https://localhost:7280/api/Users", {
-    //            method: 'POST',
-    //            body: JSON.stringify(User),
-    //            headers:
-    //            {
-    //                'Content-Type': "application/json"
-    //            }
-    //        }
-    //        )
-    //        if (!response.ok)
-    //            throw new Error("Error recieving data to server")
-    //        alert("user add")
-    //    }
-
-    //    catch (error) {
-    //        alert(error)
-    //    }
-    //}
-newUser = () => {
-    const div = document.querySelector("#newUser")
-    div.setAttribute("style", "visibility:visible")
+﻿showRegister = () => {
+    const div = document.querySelector("#register");
+    div.setAttribute("style", "visibility:visible");
 }
-logIn = async () => {
-    const login_username = document.querySelector("#login_username").value;
-    const login_password = document.querySelector("#login_password").value;
-    const newUser = { username: login_username, password: login_password, firstname: "", lastname: "" }
-    let flag = false;
-    try {
-        const response = await fetch("https://localhost:7280/api/Users/login", {
-            method: "POST",
-            body: JSON.stringify(newUser),
-            headers: { "Content-Type": "application/json" }
-        });
-
-        if (!response.ok) {
-            throw new Error(`Error: ${response.status} - ${response.statusText}`);
-        }
-        const user = await response.json();
-        sessionStorage.setItem("user", JSON.stringify(user));
-        return window.location.href = "https://localhost:7280/site.html"
-    } catch (error) {
-        alert(error.message);
-    }
-}
-//register = async () => {
-//    const username = document.querySelector("#rname").value;
-//    const password = document.querySelector("#rpassword").value;
-//    const firstname = document.querySelector("#firstname").value;
-//    const lastname = document.querySelector("#lastname").value;
-
-//    if (!username || !password) {
-//        alert("username and password are required");
-//    }
-
-//    const registerrequest =
-//    {
-//        username: username,
-//        password: password,
-//        firstname: firstname,
-//        lastname: lastname
-//    }
-//    try {
-//        const response = await fetch("api/users/register", {
-//            method: "POST",
-//            headers: {
-//                "content-type": "application/json",
-//                "body": JSON.stringify(registerrequest)
-//            }
-//        })
-//        if (!response.ok)
-//            throw new Error("Error recieving data to server")
-//        alert("user add")
-//    }
-//    catch (error) {
-//        alert("Error: " + error.message);
-//    }
-//}
-//showRegister = () => {
-//const div = document.querySelector("#register");
-//div.setAttribute("style", "visibility:visible");
-//}
-const signUp = async () => {
-    const username = document.querySelector("#username").value;
-    const lastname = document.querySelector("#lastname").value;
-    const firstname = document.querySelector("#firstname").value;
+login = async () => {
+    const username = document.querySelector("#name").value;
     const password = document.querySelector("#password").value;
-
-    const user = { username, lastname, firstname, password };
-
+    if (!username || !password) {
+        alert("username and password are required");
+    }
+    const loginrequest = {
+        UserName: username,
+        Password: password
+    }
     try {
-        const response = await fetch("https://localhost:7280/api/Users", {
+        const response = await fetch("api/Users/login", {
             method: "POST",
-            body: JSON.stringify(user),
-            headers: { "Content-Type": "application/json" }
-        });
-
-        if (!response.ok) {
-            throw new Error(`Error: ${response.status} - ${response.statusText}`);
+            headers: {
+                "content-type": "application/json"
+            },
+            "body": JSON.stringify(loginrequest)
+        })
+        if (response.ok) {
+            const usertolocalstorage = await response.json();
+            localStorage.setItem("user", JSON.stringify(usertolocalstorage))
+            window.location.href = "UserDetails.html";
         }
-
-        alert("User added");
-    } catch (error) {
-        alert(error.message);
+        else {
+            switch (response.status) {
+                case 400:
+                    const badRequestData = await response.json();
+                    alert(`Bad request: ${badRequestData.message || 'Invalid input. Please check your data.'}`);
+                    break;
+                case 401:
+                    alert("Unauthorized: Please check your credentials.");
+                    break;
+                case 404:
+                    alert("User not found. Please check your user name and password.");
+                    break;
+                case 500:
+                    alert("Server error. Please try again later.");
+                    break;
+                default:
+                    alert(`Unexpected error: ${response.status}`);
+            }
+        }
     }
-};
-const update = async () => {
-    const update_username = document.querySelector("#update_username").value;
-    const update_lastname = document.querySelector("#update_lastname").value;
-    const update_firstname = document.querySelector("#update_firstname").value;
-    const update_password = document.querySelector("#update_password").value;
+    catch (error) {
+        alert("Error: " + error.message);
+    }
+}
+register = async () => {
+    const username = document.querySelector("#rname").value;
+    const password = document.querySelector("#rpassword").value;
+    const firstname = document.querySelector("#firstname").value;
+    const lastname = document.querySelector("#lastname").value;
 
-    const userId = JSON.parse(sessionStorage.getItem("user"));
-
-    const user = {
-        userId: userId.userId,
-        username: update_username,
-        lastname: update_lastname,
-        firstname: update_firstname,
-        password: update_password
-    };
+    if (!username || !password) {
+        alert("username and password are required");
+    }
+    const registerrequest = {
+        UserName: username,
+        Password: password,
+        FirstName: firstname,
+        LastName: lastname
+    }
     try {
-        console.log(user)
-        const response = await fetch(`https://localhost:7280/api/Users/${user.userId}`, {
-            method: "PUT",
-            body: JSON.stringify(user),
-            headers: { "Content-Type": "application/json" }
-        });
-        if (!response.ok) {
-            throw new Error(`Error: ${response.status} -- ${response.statusText}`);
+        const response = await fetch("api/Users/register", {
+            method: "POST",
+            headers: {
+                "content-type": "application/json",
+
+            },
+            "body": JSON.stringify(registerrequest)
+        })
+        const data = await response.json();
+        if (response.ok) {
+            localStorage.setItem("user", JSON.stringify(data))
+            alert("user registered successfully")
         }
-
-        alert("User updated");
-    } catch (error) {
-        alert(error.message);
+        else {
+            switch (response.status) {
+                case 400:
+                    alert(`Bad request: ${data.message || 'Invalid input. Please check your data.'}`);
+                    break;
+                case 401:
+                    alert(`Unauthorized:${data.message || ' Please check your credentials.'}`);
+                    break;
+                case 500:
+                    alert("Server error. Please try again later.");
+                    break;
+                default:
+                    alert(`Unexpected error: ${response.status + data.message}`);
+            }
+        }
     }
-};
-
+    catch (error) {
+        alert("Error: " + error.message);
+    }
+}

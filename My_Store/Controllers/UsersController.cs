@@ -1,100 +1,99 @@
-﻿
-using Microsoft.AspNetCore.Mvc;
-using My_Store.Controllers;
-using System.Diagnostics;
-using System.Linq.Expressions;
-using System.Text.Json;
-using Services;
+﻿using Services;
 using Entities;
-using Umbraco.Core.Services.Implement;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
+using Repositories;
+using Services;
+using System.Text.Json;
+
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace My_Store.Controllers
+namespace WatchStore.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class UsersController : ControllerBase
     {
-        userService userService = new userService();
-        //private static readonly List<Users> users = new List<Users>();
+        IUsersServices usersServices;
+        public UsersController(IUsersServices usersServices)
+        {
+            this.usersServices = usersServices;
+        }
+
         // GET: api/<UsersController>
         [HttpGet]
-        public ActionResult< IEnumerable<Users>> Get()
+        public IEnumerable<User> Get()
         {
-            
-            List<Users> users =userService.getAllUsers();
-            if (users.Count > 0)
-                return Ok(users);
-            return NoContent();
+            return null;//users;
         }
 
         // GET api/<UsersController>/5
         [HttpGet("{id}")]
-        public ActionResult<Users> Get(int id)
+        public async Task<ActionResult<User>> Get(int id)
         {
-            Users users = userService.getUserById(id);
-            if (users==null) return NoContent();
-            return Ok(users);
-           
+            User user = await usersServices.GetUserById(id);
+            if (user != null)
+            {
+                return Ok(user);
+            }
+            else
+            {
+                return NoContent();
+            }
         }
 
         // POST api/<UsersController>
-        [HttpPost]
-        public ActionResult<Users> Post([FromBody] Users user)
+
+        [HttpPost("register")]
+        public async Task<ActionResult<User>> Register([FromBody] User user)
         {
-            Users newUser = userService.addUser(user);
-            //int numberOfUsers = System.IO.File.ReadLines("C:\\Users\\215085283\\Desktop\\users.txt").Count();
-            //user.userId = numberOfUsers + 1;
-            //string userJson = JsonSerializer.Serialize(user);
-            //System.IO.File.AppendAllText("C:\\Users\\215085283\\Desktop\\users.txt", userJson + Environment.NewLine);
-            return CreatedAtAction(nameof(Get), new { id = user.userId }, newUser);
+            if (user is null)
+                return StatusCode(400, "user is required");
+
+            if (string.IsNullOrEmpty(user.Password) || string.IsNullOrEmpty(user.UserName))
+                return StatusCode(400, "Password and UserName are required");
+            try
+            {
+                await usersServices.Register(user);
+                return CreatedAtAction(nameof(Get), new { id = user.UserId }, user);
+            }
+            catch (CustomApiException ex)
+            {
+                //Console.WriteLine(ex.Message);
+                return StatusCode(ex.StatusCode, new { message = ex.Message });
+            }
+
         }
 
         [HttpPost("login")]
-        public ActionResult<Users> Login([FromBody] Users newUser)
+        public async Task<ActionResult<User>> login([FromBody] LoginUser loginUser)
         {
-            Users users = userService.login(newUser);
-            if (users == null) return NotFound(new { Message = "User not found." });
-            return Ok(users);
-            //using (StreamReader reader = System.IO.File.OpenText("C:\\Users\\215085283\\Desktop\\users.txt"))
-            //{
-            //    string? currentUserInFile;
-            //    while ((currentUserInFile = reader.ReadLine()) != null)
-            //    {
-            //        Users user = JsonSerializer.Deserialize<Users>(currentUserInFile);
-            //        if (user.username == newUser.username && user.password == newUser.password)
-            //            return Ok(user);
-            //    }
-            //}
+            if (string.IsNullOrEmpty(loginUser?.Password) || string.IsNullOrEmpty(loginUser?.UserName))
+                return BadRequest(new { error = "Username and password are required." });
+            try
+            {
+                User user = await usersServices.Login(loginUser);
+                return Ok(user);
+            }
+            catch (CustomApiException ex)
+            {
+                return StatusCode(ex.StatusCode, new { message = ex.Message });
+            }
         }
-
 
         // PUT api/<UsersController>/5
         [HttpPut("{id}")]
-        public ActionResult<Users> Put(int id, [FromBody] Users userUpdate)
+        public async Task<ActionResult<User>> Put(int id, [FromBody] User userToUpdate)
         {
-            Users users = userService.updateUser(id, userUpdate);
-            if (users == null) return NoContent();
-            return Ok(users);
-            //string textToReplace = string.Empty;
-            //using (StreamReader reader = System.IO.File.OpenText("C:\\Users\\215085283\\Desktop\\users.txt"))
-            //{
-            //    string currentUserInFile;
-            //    while ((currentUserInFile = reader.ReadLine()) != null)
-            //    {
-
-            //        Users user = JsonSerializer.Deserialize<Users>(currentUserInFile);
-            //        if (user.userId == id)
-            //            textToReplace = currentUserInFile;
-            //    }
-            //}
-
-            //if (textToReplace != string.Empty)
-            //{
-            //    string text = System.IO.File.ReadAllText("C:\\Users\\215085283\\Desktop\\users.txt");
-            //    text = text.Replace(textToReplace, JsonSerializer.Serialize(userUpdate));
-            //    System.IO.File.WriteAllText("C:\\Users\\215085283\\Desktop\\users.txt", text);
-            //}
+            try
+            {
+                User user = await usersServices.UpdateUser(id, userToUpdate);
+                return Ok(user);
+            }
+            catch (CustomApiException ex)
+            {
+                return StatusCode(ex.StatusCode, new { message = ex.Message });
+            }
         }
 
         // DELETE api/<UsersController>/5
@@ -104,4 +103,3 @@ namespace My_Store.Controllers
         }
     }
 }
-
