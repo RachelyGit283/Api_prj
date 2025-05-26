@@ -1,6 +1,7 @@
 M:\API\My_Store\Entities\bin\Debug\net9.0\Entities.deps.json
 M:\API\My_Store\Entities\bin\Debug\net9.0\Entities.dll
 M:\API\My_Store\Entities\bin\Debug\net9.0\Entities.pdb
+M:\API\My_Store\Entities\obj\Debug\net9.0\Entities.csproj.AssemblyReference.cache
 M:\API\My_Store\Entities\obj\Debug\net9.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
 M:\API\My_Store\Entities\obj\Debug\net9.0\Entities.AssemblyInfoInputs.cache
 M:\API\My_Store\Entities\obj\Debug\net9.0\Entities.AssemblyInfo.cs
@@ -10,4 +11,3 @@ M:\API\My_Store\Entities\obj\Debug\net9.0\Entities.dll
 M:\API\My_Store\Entities\obj\Debug\net9.0\refint\Entities.dll
 M:\API\My_Store\Entities\obj\Debug\net9.0\Entities.pdb
 M:\API\My_Store\Entities\obj\Debug\net9.0\ref\Entities.dll
-M:\API\My_Store\Entities\obj\Debug\net9.0\Entities.csproj.AssemblyReference.cache

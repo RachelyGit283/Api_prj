@@ -1,0 +1,6 @@
+M:\API\My_Store\DTO\obj\Debug\net9.0\DTO.csproj.AssemblyReference.cache
+M:\API\My_Store\DTO\obj\Debug\net9.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+M:\API\My_Store\DTO\obj\Debug\net9.0\DTO.AssemblyInfoInputs.cache
+M:\API\My_Store\DTO\obj\Debug\net9.0\DTO.AssemblyInfo.cs
+M:\API\My_Store\DTO\obj\Debug\net9.0\DTO.csproj.CoreCompileInputs.cache
+M:\API\My_Store\DTO\obj\Debug\net9.0\DTO.sourcelink.json

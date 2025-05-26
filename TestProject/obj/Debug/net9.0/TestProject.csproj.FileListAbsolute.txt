@@ -1,0 +1,8 @@
+M:\API\My_Store\TestProject\bin\Debug\net9.0\.msCoverageSourceRootsMapping_TestProject
+M:\API\My_Store\TestProject\bin\Debug\net9.0\CoverletSourceRootsMapping_TestProject
+M:\API\My_Store\TestProject\obj\Debug\net9.0\TestProject.csproj.AssemblyReference.cache
+M:\API\My_Store\TestProject\obj\Debug\net9.0\TestProject.GeneratedMSBuildEditorConfig.editorconfig
+M:\API\My_Store\TestProject\obj\Debug\net9.0\TestProject.AssemblyInfoInputs.cache
+M:\API\My_Store\TestProject\obj\Debug\net9.0\TestProject.AssemblyInfo.cs
+M:\API\My_Store\TestProject\obj\Debug\net9.0\TestProject.csproj.CoreCompileInputs.cache
+M:\API\My_Store\TestProject\obj\Debug\net9.0\TestProject.sourcelink.json

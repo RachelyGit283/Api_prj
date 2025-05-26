@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 using Entities;
 
 namespace Repositories
 {
     public interface IProductsData
     {
-        Task<List<Product>> GetProducts();
+        Task<List<Product>> GetProducts(string? desc, int? minPrice, int? maxPrice, int?[] categoryIds);
     }
 }

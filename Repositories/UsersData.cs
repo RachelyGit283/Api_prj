@@ -1,14 +1,11 @@
 ﻿using Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using Microsoft.EntityFrameworkCore;
+using DTO;
 namespace Repositories
 {
     public class UsersData
-        : IUsersData
+          : IUsersData
     {
         StoreDB215085283Context _StoreDB215085283Context;
 
@@ -19,10 +16,11 @@ namespace Repositories
         public async Task<User> GetUserByIdFromDB(int id)
         {
             return await _StoreDB215085283Context.Users.FirstOrDefaultAsync(user => user.UserId == id);
+
         }
 
 
-        public async Task Register(User user)
+        public async Task<User> Register(User user)
         {
             try
             {
@@ -30,6 +28,7 @@ namespace Repositories
                     throw new CustomApiException(409, "Username is already taken");
                 await _StoreDB215085283Context.Users.AddAsync(user);
                 await _StoreDB215085283Context.SaveChangesAsync();
+                return user;
             }
             catch (CustomApiException ex)
             {
@@ -41,15 +40,24 @@ namespace Repositories
             }
         }
 
-        public async Task<User> Login(LoginUser loginUser)
+        public async Task<User> Login(LoginUserDto loginUser)
         {
-            return await _StoreDB215085283Context.Users.FirstOrDefaultAsync(user => user.UserName == loginUser.UserName && user.Password == loginUser.Password);
+            var res = await _StoreDB215085283Context.Users.FirstOrDefaultAsync(user => user.UserName == loginUser.UserName && user.Password == loginUser.Password);
+            Console.WriteLine(res);
+            return res;
         }
 
         public async Task<User> UpdateUser(int id, User userToUpdate)
         {
             try
             {
+                userToUpdate.UserId = id;
+                //
+                var existingUser = await _StoreDB215085283Context.Users.FindAsync(id);
+                if (existingUser != null)
+                {
+                    _StoreDB215085283Context.Entry(existingUser).State = EntityState.Detached;
+                }
                 _StoreDB215085283Context.Update(userToUpdate);
                 await _StoreDB215085283Context.SaveChangesAsync();
 

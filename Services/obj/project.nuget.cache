@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4ExVAn1zr98=",
+  "dgSpecHash": "ULM25n+nzTc=",
   "success": true,
   "projectFilePath": "M:\\API\\My_Store\\Services\\Services.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\215085283\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\215085283\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\215085283\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\215085283\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
