@@ -42,9 +42,9 @@ namespace Repositories
 
         public async Task<User> Login(LoginUserDto loginUser)
         {
-            var res = await _StoreDB215085283Context.Users.FirstOrDefaultAsync(user => user.UserName == loginUser.UserName && user.Password == loginUser.Password);
-            Console.WriteLine(res);
-            return res;
+            return await _StoreDB215085283Context.Users.FirstOrDefaultAsync(user => user.UserName == loginUser.UserName && user.Password == loginUser.Password);
+            // Console.WriteLine(res);
+            // return res;
         }
 
         public async Task<User> UpdateUser(int id, User userToUpdate)

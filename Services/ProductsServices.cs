@@ -23,6 +23,8 @@ namespace Services
         {
             List<Product> products = await _productsData.GetProducts(desc, minPrice, maxPrice, categoryIds);
             return _mapper.Map<List<ProductDto>>(products);
+            //delete comments
+            
             //List<ProductDto> productDtos = new List<ProductDto>();
             //foreach (var item in products)
             //{
