@@ -19,7 +19,7 @@ namespace Services
 
         public UsersServices(IUsersData usersData, IMapper mapper)
         {
-            this._usersData = usersData;
+            _usersData = usersData;
             _mapper = mapper;
         }
         public bool ValidatePasswordStrength(string password)
